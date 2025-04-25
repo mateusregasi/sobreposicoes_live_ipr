@@ -1,29 +1,37 @@
-from Generator import Generator as G
+from Interface import Interface
+import pyglet, os
 
-WIDTH = 1920
-HEIGHT = 1080
+# Importando fontes que serão necessárias
+pyglet.font.add_file('_font/Roboto-Regular.ttf')
 
-while(1):
+app = Interface()
+app.loop()
 
-    r = int(input("Informe o que deseja fazer: \n\n1) Gerar sobreposição de ministro\n2) Gerar sobreposição de louvor\n>> "))
 
-    if(r == 1):
+# WIDTH_IMG = 1920
+# HEIGHT_IMG = 1080
 
-        title = input("Informe o nome do ministro: ").strip()
-        subtitle = input("Informe a ocupação do ministro: ").strip()
-        # title = "Ministro"
-        # subtitle = "Louvor"
+# while(1):
 
-        G.GenerateMinister(WIDTH, HEIGHT, "arial.ttf", 34, "arial-italic.ttf", 20,50, 50, 180, 200, 1, 30, 200, title, subtitle)
+#     r = int(input("Informe o que deseja fazer: \n\n1) Gerar sobreposição de ministro\n2) Gerar sobreposição de louvor\n>> "))
 
-    elif(r == 2):
+#     if(r == 1):
 
-        title = input("Informe o nome do louvor: ").strip()
-        subtitle = input("Informe a versão do louvor: ").strip()
-        # title = "Louvor"
-        # subtitle = "Versão"
+#         title = input("Informe o nome do ministro: ").strip()
+#         subtitle = input("Informe a ocupação do ministro: ").strip()
+#         # title = "Ministro"
+#         # subtitle = "Louvor"
 
-        G.generateMusic(WIDTH, HEIGHT, "arial-bold.ttf", 40, "arial-italic.ttf", 20, 90, 30, 180, 200, 1, 30, 200, title, subtitle)
+#         G.GenerateMinister(WIDTH_IMG, HEIGHT_IMG, "_font/arial.ttf", 34, "_font/arial-italic.ttf", 20,50, 50, 180, 200, 1, 30, 200, title, subtitle)
 
-    else:
-        print("Opção inválida, tente novamente!")
+#     elif(r == 2):
+
+#         title = input("Informe o nome do louvor: ").strip()
+#         subtitle = input("Informe a versão do louvor: ").strip()
+#         # title = "Louvor"
+#         # subtitle = "Versão"
+
+#         G.generateMusic(WIDTH_IMG, HEIGHT_IMG, "_font/arial-bold.ttf", 40, "_font/arial-italic.ttf", 20, 90, 30, 180, 200, 1, 30, 200, title, subtitle)
+
+#     else:
+#         print("Opção inválida, tente novamente!")

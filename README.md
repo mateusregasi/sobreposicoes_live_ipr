@@ -20,6 +20,14 @@ Foi utilizado Modelo Iterativo Incremental. Separei o projeto em 5 etapas de fat
 
 # Projeto
 
+## Pré-requisitos
+
+### Linux
+
+Caso seu linux não suporte o tkinter: 
+`apt-get install python-tk`
+`sudo apt-get install python3-tk-dbg`
+
 ## Ferramentas
 
 Serão utilizadas as seguintes ferramentas:
@@ -27,6 +35,7 @@ Serão utilizadas as seguintes ferramentas:
 - Python 3
 - Pillow (biblioteca usada para geração de imagens)
 - OS (biblioteca usada para manipulação de arquivos e de informações do sistema)
+- Pyglet (biblioteca necessária para importar fontes)
 - TKInter (biblioteca responsável pela interface gráfica)
 
 # Instalação
